@@ -13,6 +13,21 @@ info:
   termsOfService: aldjfkdjfldk
 servers:
   - url: 'http://localhost:3000'
-paths: {}
+paths:
+  /weather:
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses: {}
+      operationId: get-weather
+      description: hail mary test...
 components:
   schemas: {}
+  securitySchemes:
+    API Key - 1:
+      type: oauth2
+      flows:
+        password:
+          tokenUrl: ''
+          refreshUrl: ''
+          scopes: {}
